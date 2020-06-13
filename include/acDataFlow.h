@@ -1,0 +1,6 @@
+#ifndef ACDATAFLOW_LIBRARY_H
+#define ACDATAFLOW_LIBRARY_H
+
+void hello();
+
+#endif //ACDATAFLOW_LIBRARY_H
