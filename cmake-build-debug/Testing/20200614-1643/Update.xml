@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Update mode="Client" Generator="ctest-3.16.5">
+	<Site>MacBook-Pro-Gian.local</Site>
+	<BuildName>Darwin-c++</BuildName>
+	<BuildStamp>20200614-1643-Continuous</BuildStamp>
+	<StartDateTime>Jun 14 18:43 CEST</StartDateTime>
+	<StartTime>1592152999</StartTime>
+	<UpdateCommand>"/usr/local/bin/git" "fetch"</UpdateCommand>
+	<UpdateType>GIT</UpdateType>
+	<Revision>f4d368450efcad117292c4431a33b754e0de95e1</Revision>
+	<EndDateTime>Jun 14 18:43 CEST</EndDateTime>
+	<EndTime>1592153009</EndTime>
+	<ElapsedMinutes>0</ElapsedMinutes>
+	<UpdateReturnStatus/>
+</Update>

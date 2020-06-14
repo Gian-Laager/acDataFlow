@@ -1,0 +1,29 @@
+--- Begin Cleanup ---
+--- End Cleanup ---
+"/usr/local/bin/git" "rev-list" "-n" "1" "HEAD" "--"
+rl-out> f4d368450efcad117292c4431a33b754e0de95e1
+--- Begin Update ---
+"/usr/local/bin/git" "fetch"
+fetch-err> Auto packing the repository in background for optimum performance.
+fetch-err> See "git help gc" for manual housekeeping.
+"/usr/local/bin/git" "rev-parse" "--git-dir"
+rev-parse-out> .git
+FETCH_HEAD> f4d368450efcad117292c4431a33b754e0de95e1		branch 'master' of https://github.com/Gian-Laager/acDataFlow
+"/usr/local/bin/git" "reset" "--hard" "f4d368450efcad117292c4431a33b754e0de95e1"
+reset-err> [KUpdating files:  13% (8772/66474)[KUpdating files:  14% (9307/66474)[KUpdating files:  15% (9972/66474)[KUpdating files:  16% (10636/66474)[KUpdating files:  17% (11301/66474)[KUpdating files:  18% (11966/66474)[KUpdating files:  19% (12631/66474)[KUpdating files:  20% (13295/66474)[KUpdating files:  21% (13960/66474)[KUpdating files:  22% (14625/66474)[KUpdating files:  23% (15290/66474)[KUpdating files:  24% (15954/66474)[KUpdating files:  25% (16619/66474)[KUpdating files:  26% (17284/66474)[KUpdating files:  26% (17419/66474)[KUpdating files:  27% (17948/66474)[KUpdating files:  28% (18613/66474)[KUpdating files:  29% (19278/66474)[KUpdating files:  30% (19943/66474)[KUpdating files:  31% (20607/66474)[KUpdating files:  32% (21272/66474)[KUpdating files:  33% (21937/66474)[KUpdating files:  34% (22602/66474)[KUpdating files:  35% (23266/66474)[KUpdating files:  36% (23931/66474)[KUpdating files:  37% (24596/66474)[KUpdating files:  37% (24967/66474)[KUpdating files:  38% (25261/66474)[KUpdating files:  39% (25925/66474)[KUpdating files:  40% (26590/66474)[KUpdating files:  41% (27255/66474)[KUpdating files:  42% (27920/66474)[KUpdating files:  43% (28584/66474)[KUpdating files:  44% (29249/66474)[KUpdating files:  45% (29914/66474)[KUpdating files:  46% (30579/66474)[KUpdating files:  47% (31243/66474)[KUpdating files:  48% (31908/66474)[KUpdating files:  49% (32573/66474)[KUpdating files:  50% (33237/66474)[KUpdating files:  51% (33902/66474)[KUpdating files:  51% (33992/66474)[KUpdating files:  52% (34567/66474)[KUpdating files:  53% (35232/66474)[KUpdating files:  54% (35896/66474)[KUpdating files:  55% (36561/66474)[KUpdating files:  56% (37226/66474)[KUpdating files:  57% (37891/66474)[KUpdating files:  58% (38555/66474)[KUpdating files:  59% (39220/66474)[KUpdating files:  60% (39885/66474)[KUpdating files:  61% (40550/66474)[KUpdating files:  62% (41214/66474)[KUpdating files:  63% (41879/66474)[KUpdating files:  64% (42544/66474)[KUpdating files:  64% (43036/66474)[KUpdating files:  65% (43209/66474)[KUpdating files:  66% (43873/66474)[KUpdating files:  67% (44538/66474)[KUpdating files:  68% (45203/66474)[KUpdating files:  69% (45868/66474)[KUpdating files:  70% (46532/66474)[KUpdating files:  71% (47197/66474)[KUpdating files:  72% (47862/66474)[KUpdating files:  73% (48527/66474)[KUpdating files:  74% (49191/66474)[KUpdating files:  75% (49856/66474)[KUpdating files:  76% (50521/66474)[KUpdating files:  76% (50735/66474)[KUpdating files:  77% (51185/66474)[KUpdating files:  78% (51850/66474)[KUpdating files:  79% (52515/66474)[KUpdating files:  80% (53180/66474)[KUpdating files:  81% (53844/66474)[KUpdating files:  82% (54509/66474)[KUpdating files:  83% (55174/66474)[KUpdating files:  84% (55839/66474)[KUpdating files:  85% (56503/66474)[KUpdating files:  86% (57168/66474)[KUpdating files:  87% (57833/66474)[KUpdating files:  88% (58498/66474)[KUpdating files:  89% (59162/66474)[KUpdating files:  90% (59827/66474)[KUpdating files:  90% (60432/66474)[KUpdating files:  91% (60492/66474)[KUpdating files:  92% (61157/66474)[KUpdating files:  93% (61821/66474)[KUpdating files:  94% (62486/66474)[KUpdating files:  95% (63151/66474)[KUpdating files:  96% (63816/66474)[KUpdating files:  97% (64480/66474)[KUpdating files:  98% (65145/66474)[KUpdating files:  99% (65810/66474)[KUpdating files: 100% (66474/66474)[KUpdating files: 100% (66474/66474), done.
+reset-out> HEAD is now at f4d3684 basic hello world, setup of the library and the CMakeLists.txt
+"/usr/local/bin/git" "rev-parse" "--show-cdup"
+rev-parse-out> 
+"/usr/local/bin/git" "--version"
+version-out> git version 2.23.0
+"/usr/local/bin/git" "submodule" "sync" "--recursive"
+"/usr/local/bin/git" "submodule" "update" "--recursive"
+--- End Update ---
+"/usr/local/bin/git" "rev-list" "-n" "1" "HEAD" "--"
+rl-out> f4d368450efcad117292c4431a33b754e0de95e1
+--- Begin Revisions ---
+"/usr/local/bin/git" "rev-list" "--reverse" "f4d368450efcad117292c4431a33b754e0de95e1..f4d368450efcad117292c4431a33b754e0de95e1" "--" | "/usr/local/bin/git" "diff-tree" "--stdin" "--always" "-z" "-r" "--pretty=raw" "--encoding=utf-8"
+dt-out> 
+"/usr/local/bin/git" "update-index" "--refresh"
+"/usr/local/bin/git" "diff-index" "-z" "HEAD" "--"
+--- End Revisions ---
