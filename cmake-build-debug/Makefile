@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	@echo "Running external command ..."
 	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	@echo "Running external command ..."
 	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
@@ -80,7 +80,7 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target package_source
 package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	@echo "Running external command ..."
 	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cpack --config ./CPackSourceConfig.cmake /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
@@ -91,7 +91,7 @@ package_source/fast: package_source
 
 # Special rule for the target package
 package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	@echo "Running external command ..."
 	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
@@ -132,46 +132,6 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named acDataFlow
-
-# Build rule for target.
-acDataFlow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 acDataFlow
-.PHONY : acDataFlow
-
-# fast build rule for target.
-acDataFlow/fast:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/build
-.PHONY : acDataFlow/fast
-
-src/acDataFlow.o: src/acDataFlow.cpp.o
-
-.PHONY : src/acDataFlow.o
-
-# target to build an object file
-src/acDataFlow.cpp.o:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.o
-.PHONY : src/acDataFlow.cpp.o
-
-src/acDataFlow.i: src/acDataFlow.cpp.i
-
-.PHONY : src/acDataFlow.i
-
-# target to preprocess a source file
-src/acDataFlow.cpp.i:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.i
-.PHONY : src/acDataFlow.cpp.i
-
-src/acDataFlow.s: src/acDataFlow.cpp.s
-
-.PHONY : src/acDataFlow.s
-
-# target to generate assembly for a file
-src/acDataFlow.cpp.s:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.s
-.PHONY : src/acDataFlow.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,10 +142,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... package_source"
 	@echo "... package"
-	@echo "... acDataFlow"
-	@echo "... src/acDataFlow.o"
-	@echo "... src/acDataFlow.i"
-	@echo "... src/acDataFlow.s"
 .PHONY : help
 
 
