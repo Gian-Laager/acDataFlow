@@ -48,13 +48,46 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cpack --config ./CPackSourceConfig.cmake /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,17 +111,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cpack --config ./CPackSourceConfig.cmake /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-
-.PHONY : package_source/fast
-
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
@@ -100,11 +122,35 @@ package/fast: package
 
 .PHONY : package/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -133,44 +179,221 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named acDataFlow
+# Target rules for targets named acMandelbrotSet
 
 # Build rule for target.
-acDataFlow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 acDataFlow
-.PHONY : acDataFlow
+acMandelbrotSet: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 acMandelbrotSet
+.PHONY : acMandelbrotSet
 
 # fast build rule for target.
-acDataFlow/fast:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/build
-.PHONY : acDataFlow/fast
-
-src/acDataFlow.o: src/acDataFlow.cpp.o
-
-.PHONY : src/acDataFlow.o
+acMandelbrotSet/fast:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/build
+.PHONY : acMandelbrotSet/fast
 
 # target to build an object file
-src/acDataFlow.cpp.o:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.o
-.PHONY : src/acDataFlow.cpp.o
-
-src/acDataFlow.i: src/acDataFlow.cpp.i
-
-.PHONY : src/acDataFlow.i
+cmake_pch.hxx.pch:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+.PHONY : cmake_pch.hxx.pch
 
 # target to preprocess a source file
-src/acDataFlow.cpp.i:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.i
-.PHONY : src/acDataFlow.cpp.i
-
-src/acDataFlow.s: src/acDataFlow.cpp.s
-
-.PHONY : src/acDataFlow.s
+cmake_pch.hxx.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
 
 # target to generate assembly for a file
-src/acDataFlow.cpp.s:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/src/acDataFlow.cpp.s
-.PHONY : src/acDataFlow.cpp.s
+cmake_pch.hxx.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
+deps/imgui/examples/imgui_impl_glfw.o: deps/imgui/examples/imgui_impl_glfw.cpp.o
+
+.PHONY : deps/imgui/examples/imgui_impl_glfw.o
+
+# target to build an object file
+deps/imgui/examples/imgui_impl_glfw.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o
+.PHONY : deps/imgui/examples/imgui_impl_glfw.cpp.o
+
+deps/imgui/examples/imgui_impl_glfw.i: deps/imgui/examples/imgui_impl_glfw.cpp.i
+
+.PHONY : deps/imgui/examples/imgui_impl_glfw.i
+
+# target to preprocess a source file
+deps/imgui/examples/imgui_impl_glfw.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.i
+.PHONY : deps/imgui/examples/imgui_impl_glfw.cpp.i
+
+deps/imgui/examples/imgui_impl_glfw.s: deps/imgui/examples/imgui_impl_glfw.cpp.s
+
+.PHONY : deps/imgui/examples/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+deps/imgui/examples/imgui_impl_glfw.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.s
+.PHONY : deps/imgui/examples/imgui_impl_glfw.cpp.s
+
+deps/imgui/examples/imgui_impl_opengl3.o: deps/imgui/examples/imgui_impl_opengl3.cpp.o
+
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.o
+
+# target to build an object file
+deps/imgui/examples/imgui_impl_opengl3.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.cpp.o
+
+deps/imgui/examples/imgui_impl_opengl3.i: deps/imgui/examples/imgui_impl_opengl3.cpp.i
+
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+deps/imgui/examples/imgui_impl_opengl3.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.i
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.cpp.i
+
+deps/imgui/examples/imgui_impl_opengl3.s: deps/imgui/examples/imgui_impl_opengl3.cpp.s
+
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+deps/imgui/examples/imgui_impl_opengl3.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.s
+.PHONY : deps/imgui/examples/imgui_impl_opengl3.cpp.s
+
+deps/imgui/imgui.o: deps/imgui/imgui.cpp.o
+
+.PHONY : deps/imgui/imgui.o
+
+# target to build an object file
+deps/imgui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o
+.PHONY : deps/imgui/imgui.cpp.o
+
+deps/imgui/imgui.i: deps/imgui/imgui.cpp.i
+
+.PHONY : deps/imgui/imgui.i
+
+# target to preprocess a source file
+deps/imgui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.i
+.PHONY : deps/imgui/imgui.cpp.i
+
+deps/imgui/imgui.s: deps/imgui/imgui.cpp.s
+
+.PHONY : deps/imgui/imgui.s
+
+# target to generate assembly for a file
+deps/imgui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.s
+.PHONY : deps/imgui/imgui.cpp.s
+
+deps/imgui/imgui_demo.o: deps/imgui/imgui_demo.cpp.o
+
+.PHONY : deps/imgui/imgui_demo.o
+
+# target to build an object file
+deps/imgui/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o
+.PHONY : deps/imgui/imgui_demo.cpp.o
+
+deps/imgui/imgui_demo.i: deps/imgui/imgui_demo.cpp.i
+
+.PHONY : deps/imgui/imgui_demo.i
+
+# target to preprocess a source file
+deps/imgui/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.i
+.PHONY : deps/imgui/imgui_demo.cpp.i
+
+deps/imgui/imgui_demo.s: deps/imgui/imgui_demo.cpp.s
+
+.PHONY : deps/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+deps/imgui/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.s
+.PHONY : deps/imgui/imgui_demo.cpp.s
+
+deps/imgui/imgui_draw.o: deps/imgui/imgui_draw.cpp.o
+
+.PHONY : deps/imgui/imgui_draw.o
+
+# target to build an object file
+deps/imgui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o
+.PHONY : deps/imgui/imgui_draw.cpp.o
+
+deps/imgui/imgui_draw.i: deps/imgui/imgui_draw.cpp.i
+
+.PHONY : deps/imgui/imgui_draw.i
+
+# target to preprocess a source file
+deps/imgui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.i
+.PHONY : deps/imgui/imgui_draw.cpp.i
+
+deps/imgui/imgui_draw.s: deps/imgui/imgui_draw.cpp.s
+
+.PHONY : deps/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+deps/imgui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.s
+.PHONY : deps/imgui/imgui_draw.cpp.s
+
+deps/imgui/imgui_widgets.o: deps/imgui/imgui_widgets.cpp.o
+
+.PHONY : deps/imgui/imgui_widgets.o
+
+# target to build an object file
+deps/imgui/imgui_widgets.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o
+.PHONY : deps/imgui/imgui_widgets.cpp.o
+
+deps/imgui/imgui_widgets.i: deps/imgui/imgui_widgets.cpp.i
+
+.PHONY : deps/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+deps/imgui/imgui_widgets.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.i
+.PHONY : deps/imgui/imgui_widgets.cpp.i
+
+deps/imgui/imgui_widgets.s: deps/imgui/imgui_widgets.cpp.s
+
+.PHONY : deps/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+deps/imgui/imgui_widgets.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.s
+.PHONY : deps/imgui/imgui_widgets.cpp.s
+
+src/acMandalbrotset.o: src/acMandalbrotset.cpp.o
+
+.PHONY : src/acMandalbrotset.o
+
+# target to build an object file
+src/acMandalbrotset.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o
+.PHONY : src/acMandalbrotset.cpp.o
+
+src/acMandalbrotset.i: src/acMandalbrotset.cpp.i
+
+.PHONY : src/acMandalbrotset.i
+
+# target to preprocess a source file
+src/acMandalbrotset.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.i
+.PHONY : src/acMandalbrotset.cpp.i
+
+src/acMandalbrotset.s: src/acMandalbrotset.cpp.s
+
+.PHONY : src/acMandalbrotset.s
+
+# target to generate assembly for a file
+src/acMandalbrotset.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.s
+.PHONY : src/acMandalbrotset.cpp.s
 
 # Help Target
 help:
@@ -178,14 +401,39 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
+	@echo "... list_install_components"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... package_source"
 	@echo "... package"
-	@echo "... acDataFlow"
-	@echo "... src/acDataFlow.o"
-	@echo "... src/acDataFlow.i"
-	@echo "... src/acDataFlow.s"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... acMandelbrotSet"
+	@echo "... cmake_pch.hxx.pch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
+	@echo "... deps/imgui/examples/imgui_impl_glfw.o"
+	@echo "... deps/imgui/examples/imgui_impl_glfw.i"
+	@echo "... deps/imgui/examples/imgui_impl_glfw.s"
+	@echo "... deps/imgui/examples/imgui_impl_opengl3.o"
+	@echo "... deps/imgui/examples/imgui_impl_opengl3.i"
+	@echo "... deps/imgui/examples/imgui_impl_opengl3.s"
+	@echo "... deps/imgui/imgui.o"
+	@echo "... deps/imgui/imgui.i"
+	@echo "... deps/imgui/imgui.s"
+	@echo "... deps/imgui/imgui_demo.o"
+	@echo "... deps/imgui/imgui_demo.i"
+	@echo "... deps/imgui/imgui_demo.s"
+	@echo "... deps/imgui/imgui_draw.o"
+	@echo "... deps/imgui/imgui_draw.i"
+	@echo "... deps/imgui/imgui_draw.s"
+	@echo "... deps/imgui/imgui_widgets.o"
+	@echo "... deps/imgui/imgui_widgets.i"
+	@echo "... deps/imgui/imgui_widgets.s"
+	@echo "... src/acMandalbrotset.o"
+	@echo "... src/acMandalbrotset.i"
+	@echo "... src/acMandalbrotset.s"
 .PHONY : help
 
 

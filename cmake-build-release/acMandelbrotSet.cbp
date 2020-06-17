@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="acMandelbrotSet"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="acMandelbrotSet">
+				<Option output="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/acMandelbrotSet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_CMAKE_TEST_CONFIG=Release"/>
+					<Add option="-DGLEW_CMAKE_TEST_TARGET_FILE_NAME=libGLEW.2.1.0.dylib"/>
+					<Add option="-DGLEW_CMAKE_TEST_TARGET_TYPE=SHARED_LIBRARY"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 acMandelbrotSet"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="acMandelbrotSet/fast">
+				<Option output="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/acMandelbrotSet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_CMAKE_TEST_CONFIG=Release"/>
+					<Add option="-DGLEW_CMAKE_TEST_TARGET_FILE_NAME=libGLEW.2.1.0.dylib"/>
+					<Add option="-DGLEW_CMAKE_TEST_TARGET_TYPE=SHARED_LIBRARY"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 acMandelbrotSet/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.cxx">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_glfw.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_glfw.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_opengl3.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_opengl3.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imconfig.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_demo.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_draw.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_internal.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_widgets.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imstb_rectpack.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imstb_textedit.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imstb_truetype.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/acMandalbrotset.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/pch.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glew/CopyImportedTargetProperties.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glew/glew-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glew/glew-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/../../../../../../../usr/local/lib/cmake/glew/glew-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

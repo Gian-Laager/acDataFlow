@@ -44,16 +44,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
+CMAKE_SOURCE_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release
+CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/acDataFlow.dir/all
+all: CMakeFiles/acMandelbrotSet.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/acDataFlow.dir/clean
+clean: CMakeFiles/acMandelbrotSet.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/acDataFlow.dir
+# Target rules for target CMakeFiles/acMandelbrotSet.dir
 
 # All Build rule for target.
-CMakeFiles/acDataFlow.dir/all:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/depend
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles --progress-num=1,2 "Built target acDataFlow"
-.PHONY : CMakeFiles/acDataFlow.dir/all
+CMakeFiles/acMandelbrotSet.dir/all:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/depend
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target acMandelbrotSet"
+.PHONY : CMakeFiles/acMandelbrotSet.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/acDataFlow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/acDataFlow.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release/CMakeFiles 0
-.PHONY : CMakeFiles/acDataFlow.dir/rule
+CMakeFiles/acMandelbrotSet.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/acMandelbrotSet.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles 0
+.PHONY : CMakeFiles/acMandelbrotSet.dir/rule
 
 # Convenience name for target.
-acDataFlow: CMakeFiles/acDataFlow.dir/rule
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/rule
 
-.PHONY : acDataFlow
+.PHONY : acMandelbrotSet
 
 # clean rule for target.
-CMakeFiles/acDataFlow.dir/clean:
-	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/clean
-.PHONY : CMakeFiles/acDataFlow.dir/clean
+CMakeFiles/acMandelbrotSet.dir/clean:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/clean
+.PHONY : CMakeFiles/acMandelbrotSet.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

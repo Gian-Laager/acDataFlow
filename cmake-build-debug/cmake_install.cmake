@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
+# Install script for directory: /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,6 +32,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/acMandelbrotSet_d")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/lib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/src"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/usr/local/lib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    endif()
+  endif()
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -40,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
