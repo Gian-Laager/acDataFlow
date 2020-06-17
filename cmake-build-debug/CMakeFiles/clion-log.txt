@@ -1,19 +1,5 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DGIAN_LAAGERS_MAC=1 -G "CodeBlocks - Unix Makefiles" /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
--- The C compiler identification is AppleClang 11.0.3.11030032
--- The CXX compiler identification is AppleClang 11.0.3.11030032
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
-CMake Warning at CMakeLists.txt:5 (message):
+CMake Warning at CMakeLists.txt:11 (message):
   AC_DATA_FLOW_ROOT_DIR will be
   /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow, if you're
   not running the CMakeLists.txt in the root dir of the acDataFlow library,
@@ -21,53 +7,6 @@ CMake Warning at CMakeLists.txt:5 (message):
   the acDataFlow library
 
 
--- 1
--- host compiler - clang 11.0.3.11030032
-CMake Warning (dev) at deps/SYCL/cmake/FindTriSYCL.cmake:167 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'TRISYCL_OPENCL'.
-Call Stack (most recent call first):
-  deps/SYCL/CMakeLists.txt:13 (include)
-  CMakeLists.txt:57 (include)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at deps/SYCL/cmake/FindTriSYCL.cmake:172 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'TRISYCL_INCLUDE_DIR'.
-Call Stack (most recent call first):
-  deps/SYCL/CMakeLists.txt:13 (include)
-  CMakeLists.txt:57 (include)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- Found triSYCL include directory: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/include
-CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
-  Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS)
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:393 (_FPHSA_FAILURE_MESSAGE)
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindOpenMP.cmake:511 (find_package_handle_standard_args)
-  deps/SYCL/cmake/FindTriSYCL.cmake:214 (find_package)
-  deps/SYCL/CMakeLists.txt:13 (include)
-  CMakeLists.txt:57 (include)
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-You have changed variables that require your cache to be deleted.
-Configure will be re-run and you may have to reset some variables.
-The following variables have changed:
-CMAKE_CXX_COMPILER= /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
-CMAKE_CXX_COMPILER= /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
-
-CMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
-Missing variable is:
-CMAKE_MAKE_PROGRAM
+-- Configuring done
 -- Generating done
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Build files have been written to: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-debug

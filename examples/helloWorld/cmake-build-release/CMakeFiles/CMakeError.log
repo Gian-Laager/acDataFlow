@@ -1,84 +1,30 @@
-Determining if the CL_VERSION_2_2 exist failed with the following output:
+Detecting C OpenMP version failed with the following output:
 Change Dir: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_63f30/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_63f30.dir/build.make CMakeFiles/cmTC_63f30.dir/build
-Building C object CMakeFiles/cmTC_63f30.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_63f30.dir/CheckSymbolExists.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_2'
-  return ((int*)(&CL_VERSION_2_2))[argc];
-                  ^
-1 error generated.
-make[1]: *** [CMakeFiles/cmTC_63f30.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_63f30/fast] Error 2
+Run Build Command(s):/usr/bin/make cmTC_6fabb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6fabb.dir/build.make CMakeFiles/cmTC_6fabb.dir/build
+Building C object CMakeFiles/cmTC_6fabb.dir/OpenMPCheckVersion.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fopenmp=libomp;-fopenmp=libiomp5;-fopenmp;-Wno-unused-command-line-argument -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_6fabb.dir/OpenMPCheckVersion.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPCheckVersion.c
+clang: error: no input files
+/bin/sh: -fopenmp=libiomp5: command not found
+/bin/sh: -fopenmp: command not found
+/bin/sh: -Wno-unused-command-line-argument: command not found
+make[1]: *** [CMakeFiles/cmTC_6fabb.dir/OpenMPCheckVersion.c.o] Error 127
+make: *** [cmTC_6fabb/fast] Error 2
 
 
-File /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
 
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef CL_VERSION_2_2
-  return ((int*)(&CL_VERSION_2_2))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the CL_VERSION_2_1 exist failed with the following output:
+Detecting CXX OpenMP version failed with the following output:
 Change Dir: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_09887/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_09887.dir/build.make CMakeFiles/cmTC_09887.dir/build
-Building C object CMakeFiles/cmTC_09887.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_09887.dir/CheckSymbolExists.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_1'
-  return ((int*)(&CL_VERSION_2_1))[argc];
-                  ^
-1 error generated.
-make[1]: *** [CMakeFiles/cmTC_09887.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_09887/fast] Error 2
+Run Build Command(s):/usr/bin/make cmTC_4cac5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4cac5.dir/build.make CMakeFiles/cmTC_4cac5.dir/build
+Building CXX object CMakeFiles/cmTC_4cac5.dir/OpenMPCheckVersion.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -fopenmp=libomp;-fopenmp=libiomp5;-fopenmp;-Wno-unused-command-line-argument -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++1z -o CMakeFiles/cmTC_4cac5.dir/OpenMPCheckVersion.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp
+clang: error: no input files
+/bin/sh: -fopenmp=libiomp5: command not found
+/bin/sh: -fopenmp: command not found
+/bin/sh: -Wno-unused-command-line-argument: command not found
+make[1]: *** [CMakeFiles/cmTC_4cac5.dir/OpenMPCheckVersion.cpp.o] Error 127
+make: *** [cmTC_4cac5/fast] Error 2
 
 
-File /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
 
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef CL_VERSION_2_1
-  return ((int*)(&CL_VERSION_2_1))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Determining if the CL_VERSION_2_0 exist failed with the following output:
-Change Dir: /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_5590b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5590b.dir/build.make CMakeFiles/cmTC_5590b.dir/build
-Building C object CMakeFiles/cmTC_5590b.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -o CMakeFiles/cmTC_5590b.dir/CheckSymbolExists.c.o   -c /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CL_VERSION_2_0'
-  return ((int*)(&CL_VERSION_2_0))[argc];
-                  ^
-1 error generated.
-make[1]: *** [CMakeFiles/cmTC_5590b.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_5590b/fast] Error 2
-
-
-File /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/examples/helloWorld/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include </Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef CL_VERSION_2_0
-  return ((int*)(&CL_VERSION_2_0))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}

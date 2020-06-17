@@ -39,7 +39,7 @@ CMAKE_CODEBLOCKS_MAKE_ARGUMENTS:STRING=-j8
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -57,7 +57,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -81,7 +81,7 @@ CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 CMAKE_EXECUTABLE_FORMAT:STRING=MACHO
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=
+CMAKE_EXE_LINKER_FLAGS:STRING=-L/usr/local/opt/llvm/lib
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -112,7 +112,7 @@ CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=
+CMAKE_MODULE_LINKER_FLAGS:STRING=-L/usr/local/opt/llvm/lib
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -157,22 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=triSYCL
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.1.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+CMAKE_PROJECT_NAME:STATIC=acDataFlow
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -182,7 +167,7 @@ CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=
+CMAKE_SHARED_LINKER_FLAGS:STRING=-L/usr/local/opt/llvm/lib
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -236,56 +221,14 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//CXX compiler flags for OpenMP parallelization
-OpenMP_CXX_FLAGS:STRING=
-
-//CXX compiler libraries for OpenMP parallelization
-OpenMP_CXX_LIB_NAMES:STRING=
-
-//C compiler flags for OpenMP parallelization
-OpenMP_C_FLAGS:STRING=
-
-//C compiler libraries for OpenMP parallelization
-OpenMP_C_LIB_NAMES:STRING=
-
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
-
-//triSYCL use debug mode
-TRISYCL_DEBUG:BOOL=OFF
-
-//triSYCL trace of object lifetimes
-TRISYCL_DEBUG_STRUCTORS:BOOL=OFF
-
-//triSYCL include directory
-TRISYCL_INCLUDE_DIR:BOOL=OFF
-
-//triSYCL use synchronous kernel execution
-TRISYCL_NO_ASYNC:BOOL=OFF
-
-//triSYCL OpenCL interoperability mode
-TRISYCL_OPENCL:BOOL=OFF
-
-//triSYCL multi-threading with OpenMP
-TRISYCL_OPENMP:BOOL=ON
-
-//triSYCL multi-threading with TBB
-TRISYCL_TBB:BOOL=OFF
-
-//triSYCL trace of kernel execution
-TRISYCL_TRACE_KERNEL:BOOL=OFF
 
 //Value Computed by CMake
 acDataFlow_BINARY_DIR:STATIC=/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release
 
 //Value Computed by CMake
 acDataFlow_SOURCE_DIR:STATIC=/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
-
-//Value Computed by CMake
-triSYCL_BINARY_DIR:STATIC=/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/cmake-build-release
-
-//Value Computed by CMake
-triSYCL_SOURCE_DIR:STATIC=/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
 
 
 ########################
@@ -433,30 +376,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_CXX_FLAGS
-OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
-OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_C_FLAGS
-OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_C_LIB_NAMES
-OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_DEBUG
-TRISYCL_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_DEBUG_STRUCTORS
-TRISYCL_DEBUG_STRUCTORS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_INCLUDE_DIR
-TRISYCL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_NO_ASYNC
-TRISYCL_NO_ASYNC-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_OPENCL
-TRISYCL_OPENCL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_OPENMP
-TRISYCL_OPENMP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_TBB
-TRISYCL_TBB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: TRISYCL_TRACE_KERNEL
-TRISYCL_TRACE_KERNEL-ADVANCED:INTERNAL=1
 

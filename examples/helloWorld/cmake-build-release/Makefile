@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target package_source
 package_source:
@@ -145,6 +145,46 @@ acDataFlowHelloWorld/fast:
 	$(MAKE) -f CMakeFiles/acDataFlowHelloWorld.dir/build.make CMakeFiles/acDataFlowHelloWorld.dir/build
 .PHONY : acDataFlowHelloWorld/fast
 
+#=============================================================================
+# Target rules for targets named acDataFlow
+
+# Build rule for target.
+acDataFlow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 acDataFlow
+.PHONY : acDataFlow
+
+# fast build rule for target.
+acDataFlow/fast:
+	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/build
+.PHONY : acDataFlow/fast
+
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.o: Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.o
+
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.o
+
+# target to build an object file
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.o:
+	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.o
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.o
+
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.i: Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.i
+
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.i
+
+# target to preprocess a source file
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.i:
+	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.i
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.i
+
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.s: Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.s
+
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.s
+
+# target to generate assembly for a file
+Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.s:
+	$(MAKE) -f CMakeFiles/acDataFlow.dir/build.make CMakeFiles/acDataFlow.dir/Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.s
+.PHONY : Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 
 .PHONY : helloWorld.o
@@ -178,11 +218,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... package_source"
 	@echo "... package"
 	@echo "... acDataFlowHelloWorld"
+	@echo "... acDataFlow"
+	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.o"
+	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.i"
+	@echo "... Users/gianlaager/Documents/code/C++/ClionProjects/acDataFlow/src/acDataFlow.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
