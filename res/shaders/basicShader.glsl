@@ -1,4 +1,4 @@
-#vertex shader
+#shader vertex
 #version 410
 
 layout(location = 0) in vec4 pos;
@@ -8,9 +8,10 @@ out vec4 pixColor;
 
 void main() {
     gl_Position = pos;
+    pixColor = color;
 }
 
-#fragment shader
+#shader fragment
 #version 410
 
 out vec4 colorOut;

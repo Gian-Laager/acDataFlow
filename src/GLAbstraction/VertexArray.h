@@ -32,5 +32,6 @@ public:
 
 private:
     void disableAll() const;
+
     void enableAll() const;
 };

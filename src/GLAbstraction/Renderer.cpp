@@ -36,6 +36,7 @@ Renderer::Renderer(VertexBuffer* vbo, IndexBuffer* ibo, VertexBufferLayout* layo
                                              DrawMode::VERTEX_AND_INDEX_BUFFER), numberOfLayouts(numberOfLayouts),
                                      layouts(layouts) {}
 
+
 void Renderer::draw(int numberOfVertecies)
 {
     switch (drawMode)
@@ -49,7 +50,8 @@ void Renderer::draw(int numberOfVertecies)
                 glCall(glDrawElements(GL_TRIANGLES, numberOfVertecies, GL_UNSIGNED_INT, nullptr));
             } else
             {
-                glCall(glDrawArrays(GL_TRIANGLES, (int) (((long) nullptr) / sizeof(unsigned int)), numberOfVertecies));
+                glCall(glDrawArrays(GL_TRIANGLES, (int) (((long) nullptr) / sizeof(unsigned int)),
+                                    numberOfVertecies));
             }
             vao->unbind();
             shader->unbind();
@@ -88,7 +90,8 @@ void Renderer::draw(int numberOfVertecies, void* offset)
                 glCall(glDrawElements(GL_TRIANGLES, numberOfVertecies, GL_UNSIGNED_INT, offset));
             } else
             {
-                glCall(glDrawArrays(GL_TRIANGLES, (int) (((long) offset) / sizeof(unsigned int)), numberOfVertecies));
+                glCall(glDrawArrays(GL_TRIANGLES, (int) (((long) offset) / sizeof(unsigned int)),
+                                    numberOfVertecies));
             }
             shader->unbind();
             vao->unbind();
@@ -157,28 +160,29 @@ void Renderer::draw(unsigned int numberOfVertecies, GLenum mode)
                 glCall(glDrawElements(mode, numberOfVertecies, GL_UNSIGNED_INT, nullptr));
             } else
             {
-                glCall(glDrawArrays(mode, 0, numberOfVertecies));
+                glCall(glDrawArrays(mode, (int) (((long) nullptr) / sizeof(unsigned int)), numberOfVertecies));
             }
             shader->unbind();
             vao->unbind();
             break;
-        }
-        case DrawMode::VERTEX_BUFFER :
-        {
-            VertexArray temp_va;
-            temp_va.push(vbo, layouts, numberOfLayouts);
-            temp_va.bind();
-            shader->bind();
-            glCall(glDrawArrays(mode, (int) (((long) nullptr) / sizeof(unsigned int)), numberOfVertecies));
-            shader->unbind();
-            temp_va.unbind();
-            break;
-        }
 
-        case DrawMode::VERTEX_AND_INDEX_BUFFER :
-        {
-            draw(nullptr);
-            break;
+            case DrawMode::VERTEX_BUFFER :
+            {
+                VertexArray temp_va;
+                temp_va.push(vbo, layouts, numberOfLayouts);
+                temp_va.bind();
+                shader->bind();
+                glCall(glDrawArrays(mode, (int) (((long) nullptr) / sizeof(unsigned int)), numberOfVertecies));
+                shader->unbind();
+                temp_va.unbind();
+                break;
+            }
+
+            case DrawMode::VERTEX_AND_INDEX_BUFFER :
+            {
+                draw(nullptr);
+                break;
+            }
         }
     }
 }

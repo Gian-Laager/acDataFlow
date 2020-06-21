@@ -5,7 +5,7 @@
 struct ShaderProgramSources {
     std::string vertexSource, fragmentSource;
 
-    ShaderProgramSources(const std::string &vertexSource, const std::string &fragmentSource);
+    ShaderProgramSources(std::string vertexSource, std::string fragmentSource);
 };
 
 class Shader {

@@ -16,3 +16,8 @@ VertexBufferLayout::VertexBufferLayout(int attribIndex, unsigned int numberOfEle
                                                              numberOfElements(numberOfElements), type(type),
                                                              normalized(normalized), stride(stride),
                                                              memberOffset(memberOffset) {}
+
+VertexBufferLayout::~VertexBufferLayout()
+{
+    delete attribName;
+}

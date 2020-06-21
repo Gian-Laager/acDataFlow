@@ -1,10 +1,12 @@
 #include "Shader.h"
 
+#include <utility>
+
 unsigned int Shader::boundId = 0;
 
-ShaderProgramSources::ShaderProgramSources(const std::string &vertexSource, const std::string &fragmentSource)
-        : vertexSource(
-        vertexSource), fragmentSource(fragmentSource) {}
+ShaderProgramSources::ShaderProgramSources(std::string vertexSource, std::string fragmentSource)
+        : vertexSource(std::move(
+        vertexSource)), fragmentSource(std::move(fragmentSource)) {}
 
 ShaderProgramSources* Shader::parseShader(const std::string &filePath)
 {
@@ -37,45 +39,68 @@ ShaderProgramSources* Shader::parseShader(const std::string &filePath)
 
 unsigned int Shader::compileShader(unsigned int type, const std::string &source)
 {
-    glCall(unsigned int id = glCreateShader(type));
+    glCall(unsigned int t_id = glCreateShader(type));
     const char* src = source.c_str();
-    glCall(glShaderSource(id, 1, &src, nullptr));
-    glCall(glCompileShader(id));
+    glCall(glShaderSource(t_id, 1, &src, nullptr));
+    glCall(glCompileShader(t_id));
 
     int result;
-    glCall(glGetShaderiv(id, GL_COMPILE_STATUS, &result));
-    if (!result)
+    glCall(glGetShaderiv(t_id, GL_COMPILE_STATUS, &result));
+    if (result == GL_FALSE)
     {
         int length;
-        glCall(glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length));
+        glCall(glGetShaderiv(t_id, GL_INFO_LOG_LENGTH, &length));
         char* message = (char*) alloca(length * sizeof(char));
-        glCall(glGetShaderInfoLog(id, length, &length, message));
+        glCall(glGetShaderInfoLog(t_id, length, &length, message));
         std::cout << "Failed to compile shader, message: " << message << std::endl;
-        glCall(glDeleteProgram(id));
+        glCall(glDeleteProgram(t_id));
         return 0;
     }
 
-    return id;
+    return t_id;
 }
 
 unsigned int Shader::createShader(const std::string &vertexShader, const std::string &fragmentShader)
 {
-    glCall(unsigned int program = glCreateProgram());
     unsigned int vs = Shader::compileShader(GL_VERTEX_SHADER, vertexShader);
     unsigned int fs = Shader::compileShader(GL_FRAGMENT_SHADER, fragmentShader);
-
+    
+    glCall(unsigned int program = glCreateProgram());
+    
     glCall(glAttachShader(program, vs));
     glCall(glAttachShader(program, fs));
     glCall(glLinkProgram(program));
+
+    GLint isLinked = 0;
+    glGetProgramiv(program, GL_LINK_STATUS, (int *)&isLinked);
+    if (isLinked == GL_FALSE)
+    {
+        GLint maxLength = 0;
+        glGetProgramiv(program, GL_INFO_LOG_LENGTH, &maxLength);
+
+        // The maxLength includes the NULL character
+        char* infoLog = new char[maxLength];
+        glGetProgramInfoLog(program, maxLength, &maxLength, infoLog);
+
+        std::cout << "something with the shader program went wrong: " << infoLog << std::endl;
+
+        // We don't need the program anymore.
+        glDeleteProgram(program);
+        // Don't leak shaders either.
+        glDeleteShader(vs);
+        glDeleteShader(fs);
+
+        throw std::string("something with the shader program went wrong: ") + std::string(infoLog);
+    }
     glCall(glValidateProgram(program));
 
-    glCall(glDeleteShader(vs));
-    glCall(glDeleteShader(fs));
+    glCall(glDetachShader(program, vs));
+    glCall(glDetachShader(program, fs));
 
     return program;
 }
 
-Shader::Shader(const char* filePath)
+Shader::Shader(const char* filePath) : id(0)
 {
     ShaderProgramSources* shaderSource = Shader::parseShader(filePath);
     id = Shader::createShader(shaderSource->vertexSource, shaderSource->fragmentSource);

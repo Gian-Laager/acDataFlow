@@ -18,5 +18,7 @@ public:
 
     VertexBufferLayout(int attribIndex, unsigned int numberOfElements, GLenum type, bool normalized, unsigned int stride,
                        void* memberOffset);
+
+    ~VertexBufferLayout();
 };
 
