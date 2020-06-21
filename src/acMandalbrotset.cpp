@@ -11,7 +11,8 @@ struct Vertex
     Color color;
 };
 
-float mapNumber(float x, float a, float b, float c, float d)
+template<typename T>
+T mapNumber(T x, T a, T b, T c, T d)
 {
     return (x - a) / (b - a) * (d - c) + c;
 }
@@ -26,15 +27,13 @@ void setScreenPixels(const Color* colorArray)
     cl::sycl::buffer<Vertex, 2> vb_buffer(vb_Data, cl::sycl::range<2>{width, height});
     cl::sycl::buffer<Color, 2> color_buffer(colorArray, cl::sycl::range<2>{width, height});
 
-    cl::sycl::id<2> index;
-
     queue.submit([&](cl::sycl::handler& cgh) {
         auto vb_buffer_acc = vb_buffer.get_access<cl::sycl::access::mode::write>(cgh);
         auto color_buffer_acc = color_buffer.get_access<cl::sycl::access::mode::read>(cgh);
 
         cgh.parallel_for(cl::sycl::range<2>{width, height}, cl::sycl::id<2>(), [=](cl::sycl::item<2> index) {
-            vb_buffer_acc[index[0]][index[1]] = {mapNumber(index[0], 0, width, -1, 1),
-                                                 mapNumber(index[1], 0, height, -1, 1),
+            vb_buffer_acc[index[0]][index[1]] = {mapNumber<float>(index[0], 0, width, -1, 1),
+                                                 mapNumber<float>(index[1], 0, height, -1, 1),
                                                  color_buffer_acc[index[0]][index[1]]};
         });
     });
