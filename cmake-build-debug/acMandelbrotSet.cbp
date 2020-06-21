@@ -107,6 +107,7 @@
 					<Add option="-DGLEW_CMAKE_TEST_CONFIG=Debug"/>
 					<Add option="-DGLEW_CMAKE_TEST_TARGET_FILE_NAME=libGLEW.2.1.0.dylib"/>
 					<Add option="-DGLEW_CMAKE_TEST_TARGET_TYPE=SHARED_LIBRARY"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
@@ -138,6 +139,7 @@
 					<Add option="-DGLEW_CMAKE_TEST_CONFIG=Debug"/>
 					<Add option="-DGLEW_CMAKE_TEST_TARGET_FILE_NAME=libGLEW.2.1.0.dylib"/>
 					<Add option="-DGLEW_CMAKE_TEST_TARGET_TYPE=SHARED_LIBRARY"/>
+					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
@@ -206,6 +208,42 @@
 			<Option target="acMandelbrotSet"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imstb_truetype.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.h">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.cpp">
+			<Option target="acMandelbrotSet"/>
+		</Unit>
+		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.h">
 			<Option target="acMandelbrotSet"/>
 		</Unit>
 		<Unit filename="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/acMandalbrotset.cpp">

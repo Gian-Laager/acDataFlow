@@ -18,6 +18,18 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o"
   "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_widgets.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o"
   "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o"
+  "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o"
   "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/acMandalbrotset.cpp" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o"
   "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx" "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o"
   )
@@ -32,6 +44,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../src"
   "../deps/imgui"
   "../deps/glew/include"
   "../deps/glfw/include"

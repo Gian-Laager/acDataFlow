@@ -86,11 +86,101 @@ CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/acMandalbrotset.cpp -o CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.s
 
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o: ../src/GLAbstraction/Buffer.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Buffer.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.s
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o: ../src/GLAbstraction/Renderer.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Renderer.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.s
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o: ../src/GLAbstraction/Shader.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/Shader.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.s
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o: ../src/GLAbstraction/VertexArray.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexArray.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.s
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o: ../src/GLAbstraction/VertexBuffer.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBuffer.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.s
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o: ../src/GLAbstraction/VertexBufferLayout.cpp
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.cpp
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -E /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.cpp > CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.i
+
+CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -S /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GLAbstraction/VertexBufferLayout.cpp -o CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.s
+
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o: CMakeFiles/acMandelbrotSet.dir/flags.make
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o: ../deps/imgui/imgui.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.i: cmake_force
@@ -105,7 +195,7 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o: CMa
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o: ../deps/imgui/examples/imgui_impl_opengl3.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_opengl3.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.i: cmake_force
@@ -120,7 +210,7 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o: CMakeF
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o: ../deps/imgui/examples/imgui_impl_glfw.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/examples/imgui_impl_glfw.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.i: cmake_force
@@ -135,7 +225,7 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o: CMakeFiles/acMandelb
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o: ../deps/imgui/imgui_demo.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_demo.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_demo.cpp.i: cmake_force
@@ -150,7 +240,7 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o: CMakeFiles/acMandelb
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o: ../deps/imgui/imgui_draw.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_draw.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_draw.cpp.i: cmake_force
@@ -165,7 +255,7 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o: CMakeFiles/acMand
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o: ../deps/imgui/imgui_widgets.cpp
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Xclang -include-pch -Xclang /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch -o CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.o -c /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui/imgui_widgets.cpp
 
 CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.i: cmake_force
@@ -179,6 +269,12 @@ CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.s: cmake_force
 # Object files for target acMandelbrotSet
 acMandelbrotSet_OBJECTS = \
 "CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o" \
+"CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o" \
 "CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o" \
 "CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o" \
 "CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o" \
@@ -191,6 +287,12 @@ acMandelbrotSet_EXTERNAL_OBJECTS =
 
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o
+acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_opengl3.cpp.o
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/deps/imgui/examples/imgui_impl_glfw.cpp.o
@@ -201,7 +303,7 @@ acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/build.make
 acMandelbrotSet: /usr/local/lib/libGLEW.2.1.0.dylib
 acMandelbrotSet: /usr/local/lib/libglfw.3.3.dylib
 acMandelbrotSet: CMakeFiles/acMandelbrotSet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable acMandelbrotSet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable acMandelbrotSet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/acMandelbrotSet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

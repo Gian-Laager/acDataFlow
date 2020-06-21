@@ -6,11 +6,23 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = -DGLEW_CMAKE_TEST_CONFIG=Debug -DGLEW_CMAKE_TEST_TARGET_FILE_NAME=libGLEW.2.1.0.dylib -DGLEW_CMAKE_TEST_TARGET_TYPE=SHARED_LIBRARY
 
-CXX_INCLUDES = -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -isystem /usr/local/include 
+CXX_INCLUDES = -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost -I/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -isystem /usr/local/include 
 
 # PCH options: CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch_OPTIONS = -Xclang;-emit-pch;-Xclang;-include;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx
 
 # PCH options: CMakeFiles/acMandelbrotSet.dir/src/acMandalbrotset.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
+
+# PCH options: CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
 
 # PCH options: CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui.cpp.o_OPTIONS = -Xclang;-include-pch;-Xclang;/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug/CMakeFiles/acMandelbrotSet.dir/cmake_pch.hxx.pch
 

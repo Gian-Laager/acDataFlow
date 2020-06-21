@@ -6,6 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SRC_FILES
         ${CMAKE_CURRENT_LIST_DIR}/src/acMandalbrotset.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Buffer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Renderer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Shader.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexArray.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBuffer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBufferLayout.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imgui.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_opengl3.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_glfw.cpp
@@ -17,6 +23,12 @@ set(SRC_FILES
 set(PREC_H "${CMAKE_CURRENT_LIST_DIR}/src/pch.h")
 set(HEADER_FILES
         ${PREC_H}
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Buffer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Renderer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Shader.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexArray.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBuffer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBufferLayout.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_glfw.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imgui.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_opengl3.h
@@ -27,6 +39,7 @@ set(HEADER_FILES
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imstb_rectpack.h
         )
 
+include_directories(${CMAKE_CURRENT_LIST_DIR}/src)
 
 find_package(glfw3 REQUIRED)
 find_package(GLEW REQUIRED CONFIG)
