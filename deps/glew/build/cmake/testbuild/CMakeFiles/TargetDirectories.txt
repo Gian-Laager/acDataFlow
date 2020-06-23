@@ -1,7 +1,0 @@
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/install/local.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/install/strip.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/install.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/list_install_components.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/rebuild_cache.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/edit_cache.dir
-/Users/gianlaager/Documents/code/C++/clionProjects/GLEWInit/deps/glew/build/cmake/testbuild/CMakeFiles/cmake-test.dir

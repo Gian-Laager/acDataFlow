@@ -14,6 +14,15 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework   
+-- Looking for CL_VERSION_2_2
+-- Looking for CL_VERSION_2_2 - not found
+-- Looking for CL_VERSION_2_1
+-- Looking for CL_VERSION_2_1 - not found
+-- Looking for CL_VERSION_2_0
+-- Looking for CL_VERSION_2_0 - not found
+-- Looking for CL_VERSION_1_2
+-- Looking for CL_VERSION_1_2 - found
+-- Found OpenCL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework (found version "1.2") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/cmake-build-debug

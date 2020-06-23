@@ -6,6 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SRC_FILES
         ${CMAKE_CURRENT_LIST_DIR}/src/acMandalbrotset.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Buffer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Renderer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Shader.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexArray.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBuffer.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBufferLayout.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imgui.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_opengl3.cpp
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_glfw.cpp
@@ -17,6 +23,12 @@ set(SRC_FILES
 set(PREC_H "${CMAKE_CURRENT_LIST_DIR}/src/pch.h")
 set(HEADER_FILES
         ${PREC_H}
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Buffer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Renderer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/Shader.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexArray.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBuffer.h
+        ${CMAKE_CURRENT_LIST_DIR}/src/GLAbstraction/VertexBufferLayout.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_glfw.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imgui.h
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/examples/imgui_impl_opengl3.h
@@ -27,24 +39,26 @@ set(HEADER_FILES
         ${CMAKE_CURRENT_LIST_DIR}/deps/imgui/imstb_rectpack.h
         )
 
+include_directories(${CMAKE_CURRENT_LIST_DIR}/src)
 
 find_package(glfw3 REQUIRED)
 find_package(GLEW REQUIRED CONFIG)
 find_package(OpenGL REQUIRED)
+find_package(OpenCL REQUIRED)
 
 include_directories("deps/imgui")
 
 include_directories("deps/glew/include" "deps/glfw/include")
 link_directories("deps/glew/lib" "deps/glfw/src/")
 
-set(LIBS PRIVATE GLEW::GLEW ${OPENGL_LIBRARIES} glfw)
-
 include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
 set(Boost_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/deps/boost)
-include_directories(${CMAKE_CURRENT_LIST_DIR}/deps/boost)
+include_directories(${Boost_INCLUDE_DIR})
 
 include_directories(${CMAKE_CURRENT_LIST_DIR}/deps/SYCL/include)
+
+set(LIBS PRIVATE GLEW::GLEW ${OPENGL_LIBRARIES} glfw ${Boost_LIBRARIES} OpenCL::OpenCL)
 
 add_executable(${PROJECT_NAME} ${SRC_FILES} ${HEADER_FILES})
 target_precompile_headers(${PROJECT_NAME} PRIVATE ${PREC_H})

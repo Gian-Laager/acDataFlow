@@ -37,13 +37,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
     execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/usr/local/lib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
+    execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/src"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/usr/local/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/acMandelbrotSet_d")

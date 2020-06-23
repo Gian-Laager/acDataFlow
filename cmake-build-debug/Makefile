@@ -368,6 +368,168 @@ deps/imgui/imgui_widgets.cpp.s:
 	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/deps/imgui/imgui_widgets.cpp.s
 .PHONY : deps/imgui/imgui_widgets.cpp.s
 
+src/GLAbstraction/Buffer.o: src/GLAbstraction/Buffer.cpp.o
+
+.PHONY : src/GLAbstraction/Buffer.o
+
+# target to build an object file
+src/GLAbstraction/Buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.o
+.PHONY : src/GLAbstraction/Buffer.cpp.o
+
+src/GLAbstraction/Buffer.i: src/GLAbstraction/Buffer.cpp.i
+
+.PHONY : src/GLAbstraction/Buffer.i
+
+# target to preprocess a source file
+src/GLAbstraction/Buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.i
+.PHONY : src/GLAbstraction/Buffer.cpp.i
+
+src/GLAbstraction/Buffer.s: src/GLAbstraction/Buffer.cpp.s
+
+.PHONY : src/GLAbstraction/Buffer.s
+
+# target to generate assembly for a file
+src/GLAbstraction/Buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Buffer.cpp.s
+.PHONY : src/GLAbstraction/Buffer.cpp.s
+
+src/GLAbstraction/Renderer.o: src/GLAbstraction/Renderer.cpp.o
+
+.PHONY : src/GLAbstraction/Renderer.o
+
+# target to build an object file
+src/GLAbstraction/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.o
+.PHONY : src/GLAbstraction/Renderer.cpp.o
+
+src/GLAbstraction/Renderer.i: src/GLAbstraction/Renderer.cpp.i
+
+.PHONY : src/GLAbstraction/Renderer.i
+
+# target to preprocess a source file
+src/GLAbstraction/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.i
+.PHONY : src/GLAbstraction/Renderer.cpp.i
+
+src/GLAbstraction/Renderer.s: src/GLAbstraction/Renderer.cpp.s
+
+.PHONY : src/GLAbstraction/Renderer.s
+
+# target to generate assembly for a file
+src/GLAbstraction/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Renderer.cpp.s
+.PHONY : src/GLAbstraction/Renderer.cpp.s
+
+src/GLAbstraction/Shader.o: src/GLAbstraction/Shader.cpp.o
+
+.PHONY : src/GLAbstraction/Shader.o
+
+# target to build an object file
+src/GLAbstraction/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.o
+.PHONY : src/GLAbstraction/Shader.cpp.o
+
+src/GLAbstraction/Shader.i: src/GLAbstraction/Shader.cpp.i
+
+.PHONY : src/GLAbstraction/Shader.i
+
+# target to preprocess a source file
+src/GLAbstraction/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.i
+.PHONY : src/GLAbstraction/Shader.cpp.i
+
+src/GLAbstraction/Shader.s: src/GLAbstraction/Shader.cpp.s
+
+.PHONY : src/GLAbstraction/Shader.s
+
+# target to generate assembly for a file
+src/GLAbstraction/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/Shader.cpp.s
+.PHONY : src/GLAbstraction/Shader.cpp.s
+
+src/GLAbstraction/VertexArray.o: src/GLAbstraction/VertexArray.cpp.o
+
+.PHONY : src/GLAbstraction/VertexArray.o
+
+# target to build an object file
+src/GLAbstraction/VertexArray.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.o
+.PHONY : src/GLAbstraction/VertexArray.cpp.o
+
+src/GLAbstraction/VertexArray.i: src/GLAbstraction/VertexArray.cpp.i
+
+.PHONY : src/GLAbstraction/VertexArray.i
+
+# target to preprocess a source file
+src/GLAbstraction/VertexArray.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.i
+.PHONY : src/GLAbstraction/VertexArray.cpp.i
+
+src/GLAbstraction/VertexArray.s: src/GLAbstraction/VertexArray.cpp.s
+
+.PHONY : src/GLAbstraction/VertexArray.s
+
+# target to generate assembly for a file
+src/GLAbstraction/VertexArray.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexArray.cpp.s
+.PHONY : src/GLAbstraction/VertexArray.cpp.s
+
+src/GLAbstraction/VertexBuffer.o: src/GLAbstraction/VertexBuffer.cpp.o
+
+.PHONY : src/GLAbstraction/VertexBuffer.o
+
+# target to build an object file
+src/GLAbstraction/VertexBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.o
+.PHONY : src/GLAbstraction/VertexBuffer.cpp.o
+
+src/GLAbstraction/VertexBuffer.i: src/GLAbstraction/VertexBuffer.cpp.i
+
+.PHONY : src/GLAbstraction/VertexBuffer.i
+
+# target to preprocess a source file
+src/GLAbstraction/VertexBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.i
+.PHONY : src/GLAbstraction/VertexBuffer.cpp.i
+
+src/GLAbstraction/VertexBuffer.s: src/GLAbstraction/VertexBuffer.cpp.s
+
+.PHONY : src/GLAbstraction/VertexBuffer.s
+
+# target to generate assembly for a file
+src/GLAbstraction/VertexBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBuffer.cpp.s
+.PHONY : src/GLAbstraction/VertexBuffer.cpp.s
+
+src/GLAbstraction/VertexBufferLayout.o: src/GLAbstraction/VertexBufferLayout.cpp.o
+
+.PHONY : src/GLAbstraction/VertexBufferLayout.o
+
+# target to build an object file
+src/GLAbstraction/VertexBufferLayout.cpp.o:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.o
+.PHONY : src/GLAbstraction/VertexBufferLayout.cpp.o
+
+src/GLAbstraction/VertexBufferLayout.i: src/GLAbstraction/VertexBufferLayout.cpp.i
+
+.PHONY : src/GLAbstraction/VertexBufferLayout.i
+
+# target to preprocess a source file
+src/GLAbstraction/VertexBufferLayout.cpp.i:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.i
+.PHONY : src/GLAbstraction/VertexBufferLayout.cpp.i
+
+src/GLAbstraction/VertexBufferLayout.s: src/GLAbstraction/VertexBufferLayout.cpp.s
+
+.PHONY : src/GLAbstraction/VertexBufferLayout.s
+
+# target to generate assembly for a file
+src/GLAbstraction/VertexBufferLayout.cpp.s:
+	$(MAKE) -f CMakeFiles/acMandelbrotSet.dir/build.make CMakeFiles/acMandelbrotSet.dir/src/GLAbstraction/VertexBufferLayout.cpp.s
+.PHONY : src/GLAbstraction/VertexBufferLayout.cpp.s
+
 src/acMandalbrotset.o: src/acMandalbrotset.cpp.o
 
 .PHONY : src/acMandalbrotset.o
@@ -431,6 +593,24 @@ help:
 	@echo "... deps/imgui/imgui_widgets.o"
 	@echo "... deps/imgui/imgui_widgets.i"
 	@echo "... deps/imgui/imgui_widgets.s"
+	@echo "... src/GLAbstraction/Buffer.o"
+	@echo "... src/GLAbstraction/Buffer.i"
+	@echo "... src/GLAbstraction/Buffer.s"
+	@echo "... src/GLAbstraction/Renderer.o"
+	@echo "... src/GLAbstraction/Renderer.i"
+	@echo "... src/GLAbstraction/Renderer.s"
+	@echo "... src/GLAbstraction/Shader.o"
+	@echo "... src/GLAbstraction/Shader.i"
+	@echo "... src/GLAbstraction/Shader.s"
+	@echo "... src/GLAbstraction/VertexArray.o"
+	@echo "... src/GLAbstraction/VertexArray.i"
+	@echo "... src/GLAbstraction/VertexArray.s"
+	@echo "... src/GLAbstraction/VertexBuffer.o"
+	@echo "... src/GLAbstraction/VertexBuffer.i"
+	@echo "... src/GLAbstraction/VertexBuffer.s"
+	@echo "... src/GLAbstraction/VertexBufferLayout.o"
+	@echo "... src/GLAbstraction/VertexBufferLayout.i"
+	@echo "... src/GLAbstraction/VertexBufferLayout.s"
 	@echo "... src/acMandalbrotset.o"
 	@echo "... src/acMandalbrotset.i"
 	@echo "... src/acMandalbrotset.s"
