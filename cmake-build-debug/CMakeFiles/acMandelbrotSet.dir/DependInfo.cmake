@@ -53,6 +53,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../deps/SYCL/include"
   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include"
+  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework"
   )
 
 # Targets to which this target links.

@@ -31063,10 +31063,12 @@ fstream
 -
 future
 -
+math.h
+-
+algorithm
+-
 CL/sycl.hpp
 /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/CL/sycl.hpp
-triSYCL/parallelism/detail/parallelism.hpp
--
 GL/glew.h
 /Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/src/GL/glew.h
 GLFW/glfw3.h
