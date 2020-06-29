@@ -48,7 +48,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../deps/imgui"
   "../deps/glew/include"
   "../deps/glfw/include"
-  "../include"
   "../deps/boost"
   "../deps/SYCL/include"
   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"

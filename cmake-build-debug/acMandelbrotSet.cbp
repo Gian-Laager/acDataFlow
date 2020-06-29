@@ -111,7 +111,6 @@
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
-					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"/>
@@ -144,7 +143,6 @@
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/imgui"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glew/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/glfw/include"/>
-					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/include"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/boost"/>
 					<Add directory="/Users/gianlaager/Documents/code/C++/ClionProjects/acMandelbrotSet/deps/SYCL/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"/>
