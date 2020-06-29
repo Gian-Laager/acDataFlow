@@ -1,6 +1,8 @@
 #pragma once
 
-#define TRISYCL_OPENCL
+//#define TRISYCL_OPENCL
+//#define TRISYCL_USE_OPENCL_ND_RANGE
+#define OMP_NUM_THREADS 8
 #define BOOST_COMPUTE_USE_CPP11
 
 //standart libraries
@@ -11,6 +13,9 @@
 #include <future>
 #include <math.h>
 #include <algorithm>
+#include <functional>
+#include <chrono>
+#include <vector>
 
 //deps
 #include "CL/sycl.hpp"
